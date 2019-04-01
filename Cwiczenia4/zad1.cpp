@@ -75,7 +75,7 @@ void Pojemnik::Wypisz()
 	cout << "Zajete:        " << zajete << endl;
 }
 
-Pojemnik::Pojemnik(Pojemnik& copy)
+Pojemnik::Pojemnik(const Pojemnik& copy)
 {
 	nazwa = copy.nazwa;
 	jednostka = copy.jednostka;
@@ -84,4 +84,4 @@ Pojemnik::Pojemnik(Pojemnik& copy)
 }
 
 ///////////////////////////////////////////
-//////////////////////////////////////////
+///////////////////////////////////////////

@@ -27,9 +27,13 @@ class Pojemnik
 	double zajete;
 
 public:
-	Pojemnik();
-	Pojemnik(string nazwa, int jednostka, double pojemnosc, double zajete);
-	double Dodaj(double dodawanaZawartosc);
+	Pojemnik(); // konstruktor bezparametrowy
+	Pojemnik(string nazwa, int jednostka, double pojemnosc, double zajete); // konstruktor z parametrami
+
+	//metody
+	double Dodaj(double dodawanaZawartosc); 
 	void Wypisz();
-	Pojemnik(Pojemnik& copy);
+
+	// konstrutkor kopiujacy
+	Pojemnik(const Pojemnik& copy);
 };
